@@ -1,0 +1,270 @@
+/* ===========================
+   RESET & BASE STYLES
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ===========================
+   HEADER & NAV
+=========================== */
+header {
+  background: linear-gradient(90deg, #0077cc, #00aaff);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDpcpc2n2MfKmo7FOG1JvZIuiR8KlsrdlOyg&s"); /* Replace with your hero image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1,
+.hero p,
+.hero .cta-button {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #ff7f50;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ff5722;
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   FEATURES SECTION
+=========================== */
+.features {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.feature h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===========================
+   BACKGROUND BANNER
+=========================== */
+.background-banner {
+  background-image: url(""); /* Replace with a banner/community image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.background-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.background-banner .overlay-text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.background-banner h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   LOGIN PAGE STYLES
+=========================== */
+
+body.login-page {
+  background: url("data:image/jpeg;base64,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") no-repeat center center/cover;
+  height: 100vh;                 /* Full viewport height */
+  margin: 0;
+  display: flex;                 /* Flexbox for centering */
+  justify-content: center;       /* Horizontal center */
+  align-items: center;           /* Vertical center */
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+body.login-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Login Card */
+.login-container {
+  background: rgba(255, 255, 255, 0.95); /* White with slight transparency */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  width: 320px;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Keeps above overlay */
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #0077cc;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-container input:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0,119,204,0.5);
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.login-container button:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Message */
+#loginMessage {
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.login-links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-links a {
+  color: #ff9800;  /* orange highlight */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
