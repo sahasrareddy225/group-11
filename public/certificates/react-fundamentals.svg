@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff" rx="24"/>
+  <rect x="40" y="40" width="1120" height="820" rx="16" fill="url(#g)" opacity="0.08" />
+  <g transform="translate(80,120)">
+    <text x="0" y="0" font-size="56" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#0f172a">Certificate of Completion</text>
+    <text x="0" y="120" font-size="40" font-family="Inter, Arial, sans-serif" fill="#374151">This certifies that</text>
+    <rect x="0" y="150" width="1000" height="120" rx="8" fill="#f8fafc" stroke="#e6eef9" />
+    <text id="recipient-name" x="30" y="230" font-size="42" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#0f172a">{{NAME}}</text>
+    <text x="0" y="320" font-size="28" font-family="Inter, Arial, sans-serif" fill="#374151">has successfully completed the course</text>
+    <text x="0" y="360" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="600" fill="#0f172a">React.js Fundamentals</text>
+    <text x="0" y="460" font-size="18" font-family="Inter, Arial, sans-serif" fill="#6b7280">Issued on: 2023-10-15</text>
+  </g>
+</svg>

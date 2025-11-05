@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff" rx="24"/>
+  <rect x="40" y="40" width="1120" height="820" rx="16" fill="url(#g2)" opacity="0.06" />
+  <g transform="translate(80,120)">
+    <text x="0" y="0" font-size="56" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#0f172a">Certificate of Mentorship</text>
+    <text x="0" y="120" font-size="40" font-family="Inter, Arial, sans-serif" fill="#374151">This certifies that</text>
+    <rect x="0" y="150" width="1000" height="120" rx="8" fill="#fff" stroke="#fbe7e9" />
+    <text id="recipient-name" x="30" y="230" font-size="42" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#0f172a">{{NAME}}</text>
+    <text x="0" y="320" font-size="28" font-family="Inter, Arial, sans-serif" fill="#374151">has successfully guided the student through</text>
+    <text x="0" y="360" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="600" fill="#0f172a">UI/UX Design Mentorship</text>
+    <text x="0" y="460" font-size="18" font-family="Inter, Arial, sans-serif" fill="#6b7280">Issued on: 2023-09-30</text>
+  </g>
+</svg>
